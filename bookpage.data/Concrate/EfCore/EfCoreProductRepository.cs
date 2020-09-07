@@ -131,7 +131,7 @@ namespace bookpage.data.Concrate.EfCore
                     product.Description=entity.Description;
                     product.ImageUrl=entity.ImageUrl;
 
-                    product.ProductCategories=categoryIds.Select(catid=>new ProductCategory()
+                    product.ProductCategories=categoryIds.Select(catid=>new ProductCategory()//her bir selectin zaten idsi var catid olacak catid göre product bilisi oluşturucam
                     {
                         ProductId=entity.ProductId,
                         CategoryId=catid
